@@ -1,0 +1,4 @@
+name: Report Wolfsucht
+version: '${project.version}'
+main: ReportWolfsucht
+description: eu.wolfsucht.reportwolfsucht.ReportWolfsucht
