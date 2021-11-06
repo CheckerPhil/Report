@@ -1,4 +1,7 @@
-name: Report Wolfsucht
+name: ReportWolfsucht
 version: '${project.version}'
 main: ReportWolfsucht
 description: eu.wolfsucht.reportwolfsucht.ReportWolfsucht
+
+commands:
+  report:
