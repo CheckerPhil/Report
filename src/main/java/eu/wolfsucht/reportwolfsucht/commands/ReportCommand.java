@@ -45,7 +45,7 @@ public class ReportCommand extends Command {
                     if(all.hasPermission("Report.see")){
                         p.sendMessage(new TextComponent(prefix + "Der Spieler " + ChatColor.YELLOW + target.getName() + ChatColor.RESET + " wurde von " + ChatColor.YELLOW + p.getName() + ChatColor.RESET + " für " + ChatColor.YELLOW + args[1] + ChatColor.RESET + " reportet."));
                         TextComponent c = new TextComponent(ChatColor.GREEN + "[ANNEHMEN]");
-                        c.setClickEvent();
+                        c.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tp " + target);
                     }
                 }
 
