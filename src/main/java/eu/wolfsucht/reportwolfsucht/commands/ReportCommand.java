@@ -44,6 +44,8 @@ public class ReportCommand extends Command {
                 for (ProxiedPlayer all : ProxyServer.getInstance().getPlayers()){
                     if(all.hasPermission("Report.see")){
                         p.sendMessage(new TextComponent(prefix + "Der Spieler " + ChatColor.YELLOW + target.getName() + ChatColor.RESET + " wurde von " + ChatColor.YELLOW + p.getName() + ChatColor.RESET + " für " + ChatColor.YELLOW + args[1] + ChatColor.RESET + " reportet."));
+                        TextComponent c = new TextComponent(ChatColor.GREEN + "[ANNEHMEN]");
+                        c.setClickEvent();
                     }
                 }
 
